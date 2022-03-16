@@ -213,7 +213,7 @@ img{
     .search-list{
         width: 90%;
         height: 50%;
-        transform: translate(50%);
+        /* transform: translate(50%); */
     }
     .search-list .search-list-item{
         width: 100%;
@@ -225,7 +225,7 @@ img{
         margin: 0.8rem 0;
     }
     #home-image{
-        width: 150px !important;
+        width: 300px !important;
     }
 }
 @media only screen and (min-width: 800px) {
