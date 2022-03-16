@@ -83,7 +83,8 @@ function loadMovieDetails(){
             searchList.classList.add("hide-search-list")
             movieSearchBox.value = "";
             let apiKey = DecryptStringAES(localStorage.getItem("apiKey"));
-            const result = await (await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=${apiKey}`)).json();
+            console.log(apiKey);
+            const result = await (await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=${apiKey}`)).json();
             console.log(result);
             try{
                 const {Title, Year, Rated, Genre, Writer, Actors, Plot, Language, Awards, Poster, imdbRating} = result;
